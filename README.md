@@ -1,2 +1,7 @@
 # Recommendation-System
-Implementação de um Sistema de Recomendações com Machine Learning em Java. Curso Alura.
+
+<br>
+
+## <strong> Curso Alura <strong>
+
+- Implementação de um Sistema de Recomendações com <strong> Machine Learning <strong> em <strong> Java <strong>
