@@ -2,6 +2,6 @@
 
 <br>
 
-## <strong> Curso Alura <strong>
+## <strong> Curso Alura </strong>
 
-- Implementação de um Sistema de Recomendações com <strong> Machine Learning <strong> em <strong> Java <strong>
+- Implementação de um Sistema de Recomendações com <strong> Machine Learning </strong> em <strong> Java </strong>
