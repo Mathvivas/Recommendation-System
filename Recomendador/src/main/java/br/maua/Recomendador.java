@@ -8,8 +8,16 @@ import java.io.IOException;
 
 public class Recomendador {
 
-    public DataModel getModeloDeProdutos() throws IOException {
-        File file = new File("dados.csv");
+    public DataModel getModelo(String path) throws IOException {
+        File file = new File(path);
         return new FileDataModel(file);
+    }
+
+    public DataModel getModeloDeProdutos() throws IOException {
+        return getModelo("dados.csv");
+    }
+
+    public DataModel getModeloDeCursos() throws IOException {
+        return getModelo("cursos.csv");
     }
 }
