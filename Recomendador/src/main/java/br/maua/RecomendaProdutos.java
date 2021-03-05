@@ -14,6 +14,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+/*
+    4 Usuários
+    9 items avaliados
+
+    1º coluna: Usuário
+    2º coluna: Items
+    3º coluna: Avaliação
+*/
+
 public class RecomendaProdutos {
     public static void main(String[] args) throws IOException, TasteException {
         File file = new File("dados.csv");
