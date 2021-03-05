@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/main/java/br/maua/cursos/AvaliadorCursosDois.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/main/java/br/maua/dados.csv">
           <value>
             <Attribute>

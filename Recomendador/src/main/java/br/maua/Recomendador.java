@@ -20,4 +20,8 @@ public class Recomendador {
     public DataModel getModeloDeCursos() throws IOException {
         return getModelo("cursos.csv");
     }
+
+    public DataModel getModeloDeCursosDois() throws IOException {
+        return getModelo("cursos2.csv");
+    }
 }
