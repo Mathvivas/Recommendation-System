@@ -15,6 +15,12 @@ public class AvaliadorCursosDois {
 
     public static void main(String[] args) throws IOException, TasteException {
 
+        /*
+                cursos2.csv -> Adição de "perguntas" feitas para os alunos que ainda não
+                deram notas.
+                Assim, o Recomendador consegue recomendar algo de início.
+         */
+
         // Fixa o valor randômico da análise
         RandomUtils.useTestSeed();  // Impede que a média mude. Será sempre o mesmo valor
 
