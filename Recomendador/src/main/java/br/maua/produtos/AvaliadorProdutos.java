@@ -1,5 +1,7 @@
-package br.maua;
+package br.maua.produtos;
 
+import br.maua.Recomendador;
+import br.maua.RecomendadorBuilder;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.eval.RecommenderBuilder;
 import org.apache.mahout.cf.taste.eval.RecommenderEvaluator;
