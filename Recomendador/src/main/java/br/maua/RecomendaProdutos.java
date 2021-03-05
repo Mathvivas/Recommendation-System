@@ -21,7 +21,7 @@ public class RecomendaProdutos {
     public static void main(String[] args) throws IOException, TasteException {
         DataModel produtos = new Recomendador().getModeloDeProdutos();
         // Recomendador
-        Recommender recommender = new RecomendadorDeProdutosBuilder().buildRecommender(produtos);
+        Recommender recommender = new RecomendadorBuilder().buildRecommender(produtos);
 
         // Recomendando no máximo 3 items para o usuário 2
         List<RecommendedItem> recommendations = recommender.recommend(2, 3);

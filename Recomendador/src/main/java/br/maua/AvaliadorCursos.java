@@ -9,7 +9,7 @@ import org.apache.mahout.common.RandomUtils;
 
 import java.io.IOException;
 
-public class Avaliador {
+public class AvaliadorCursos {
 
     public static void main(String[] args) throws IOException, TasteException {
 
@@ -17,13 +17,13 @@ public class Avaliador {
         RandomUtils.useTestSeed();  // Impede que a média mude. Será sempre o mesmo valor
 
         // Modelo de Análise
-        DataModel produtos = new Recomendador().getModeloDeProdutos();
+        DataModel cursos = new Recomendador().getModeloDeCursos();
 
         RecommenderEvaluator evaluator = new AverageAbsoluteDifferenceRecommenderEvaluator();
         // Construtor de Recomendações
-        RecommenderBuilder builder = new RecomendadorDeProdutosBuilder();
+        RecommenderBuilder builder = new RecomendadorBuilder();
         // 90% para treinar e 10% para testar
-        double error = evaluator.evaluate(builder, null, produtos, 0.9, 1.0);
+        double error = evaluator.evaluate(builder, null, cursos, 0.9, 1.0);
 
         System.out.println(error);
     }
