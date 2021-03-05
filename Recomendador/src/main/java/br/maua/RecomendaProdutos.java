@@ -17,12 +17,17 @@ import java.util.List;
 public class RecomendaProdutos {
     public static void main(String[] args) throws IOException, TasteException {
         File file = new File("dados.csv");
+        // Modelo de Análise
         DataModel model = new FileDataModel(file);
 
+        // Algoritmo de Similaridade
         UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
+        // Proximidade
         UserNeighborhood neighborhood = new ThresholdUserNeighborhood(0.1, similarity, model);
+        // Recomendador
         GenericUserBasedRecommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity);
 
+        // Recomendando no máximo 3 items para o usuário 2
         List<RecommendedItem> recommendations = recommender.recommend(2, 3);
         for ( RecommendedItem recommendation : recommendations ) {
             System.out.println(recommendation);
